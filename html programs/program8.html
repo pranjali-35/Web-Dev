@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.form-container{
+			.font-size: large;
+			width: 500px;
+		}
+		fieldset{
+			width: 500px;
+			padding: 10px;
+			margin: 20px;
+		}
+		.content{
+			padding: 5%;
+		}
+		.content input{
+			border: none;
+			border-bottom: 1px solid black;
+			padding: 1%;
+			margin-left: 2%;
+		}
+		button{
+			font-size: large;
+			background-color: grey;
+			color: white;
+			border: none;
+			margin-top: 3%;
+			margin-left: 5%;
+		}
+		button:hover{
+			background-color: rgb(78,78,78);
+		} 
+	</style>
+</head>
+
+<body>
+	<div class="form-container">
+	<form>
+		<fieldset>
+			<legend>Basic Information</legend>
+			<div class="content">
+				<label for="name">Full name:</label>
+				<input type="text" id="name"/>
+			</div>
+			<div class="content">
+				<label for="dob">Birth date:</label>
+				<input type="date" id="dob"/>
+			</div>
+			<div class="content">
+				<label for="gender">Gender:</label>
+				<input type="radio" id="gender" name="gender"/>
+				<label>Male</label>
+				<input type="radio" id="gender" name="gender"/>
+				<label>Female</label>
+			</div>
+			<div class="content">
+				<label for="address">Address:</label>
+				<input type="text" id="address"/>
+			</div>
+			<div class="content">
+				<label for="phn">Phone number:</label>
+				<input type="tel" id="phn" pattern="[0-9]{10}"/>
+			</div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Extra Information</legend>
+			<div class="content">
+				<label for="interest">Interests:</label>
+				<input type="checkbox" id="interest" name="interest" />
+				<label>Books</label>
+				<input type="checkbox" id="interest" name="interest" />
+				<label>Movies</label>
+				<input type="checkbox" id="interest" name="interest" />
+				<label>Videogames</label>
+			</div>
+			<div class="content">
+				<label for="color">Favourite color:</label>
+				<input type="color" id="color" />
+			</div>
+			<!--
+	<select name="color" id="color">
+	<option value="Black">Black</option>
+	<option value="Black">Pink</option>
+	<option value="Black">Yellow</option>
+	<option value="Black">Blue</option>
+	<option value="Black">Orange</option>
+	</select> -->
+		</fieldset>
+		
+		<button>Send data</button>
+		<button>Reset form</button>
+	</form>
+	</div>
+</body>
+
+</html>
